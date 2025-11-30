@@ -1,0 +1,174 @@
+body {
+    margin : 0;
+    padding : 0;
+    background-color : #e0e0e0;
+    font-family : Roboto, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+a {
+    color : black;
+    transition: all .2s ease;
+
+}
+
+a:hover {
+    transform: scale(1.2);
+
+
+}
+li {
+    margin-right: 10px;
+    margin-left : 20px;
+    padding : 5px;
+}
+
+ul {
+    padding : 0;
+    margin : 0;
+    align-content: center;
+    
+
+}
+
+.logo-av {
+    height : 50px;
+    margin-left: 1rem;
+
+}
+
+.nav-option {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.navdiv  i {
+    font-size: 25px;
+}
+
+
+
+.navbar {
+    display : flex;
+    margin : 30px 10%;
+    justify-content: space-between;
+    border-radius : 80px;
+    padding : 10px 10px;
+    backdrop-filter :blur(12px);
+    box-shadow: 0px 0px 30px rgba(98, 127, 166, 0.225);
+    border: 2px solid rgba(255, 255, 255, 0.496);
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    z-index: 1000; /* stays above everything */
+}
+
+.navdiv {
+    display : flex;
+    gap : 10px;
+}
+
+.hero {
+    margin : 10%;
+    margin-top : 270px;
+
+}
+
+.heading {
+    font-size: 60px;
+}
+
+.description {
+    width : 60%;
+    opacity : .5;
+}
+
+.hero button {
+    line-height: 40px;
+    border : none;
+    color : white;
+    background-color : black;
+    border-radius: 10px;
+    padding : 5px 25px;
+    margin-top: 2rem;
+    font-weight: bold;
+    transition: all .2s ease;
+    border: 2px solid black;
+    box-shadow: 3px 3px 1px #49698e;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero button::before {
+    content : "";
+    height : 50px;
+    width : 200px;
+    background-color : rgb(251, 251, 251);
+    position : absolute;
+    top : -20px;
+    left : 50px;
+    transform: rotate(50deg);
+    z-index: -1;
+    transition: all .4s ease;
+    border : 2px solid black;
+}
+
+.hero button:hover {
+    box-shadow: none;
+    transform: translate(3px ,3px);
+    color : black;
+    background-color: #accbee;
+    border: 2px solid black;
+
+}
+.hero button:hover::before {
+    left : -110px;
+}
+
+
+span {
+    color : #90a7c2;
+    font-size: larger;
+}
+
+.home {
+    border-bottom : 3px solid black;
+}
+
+
+.about-me {
+    margin : 10%;
+}
+
+.about-heading {
+    margin-bottom : 0px;
+
+}
+
+.sub-heading {
+    opacity: .6;
+    font-weight: 300;
+    margin-top : 0px;
+    margin-bottom : 5rem;
+}
+
+.long-desc {
+    margin-top : 2rem;
+    opacity: .9;
+    width : 70%;
+}

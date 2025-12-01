@@ -108,21 +108,22 @@ ul {
     font-weight: bold;
     transition: all .2s ease;
     border: 2px solid black;
-    box-shadow: 3px 3px 1px #49698e;
+    box-shadow: 4px 4px 1px #49698e;
     position: relative;
     overflow: hidden;
+
 
 }
 
 .hero button::before {
     content : "";
-    height : 50px;
+    height : 160px;
     width : 200px;
-    background-color : rgb(251, 251, 251);
+    background-color : #accbee;
     position : absolute;
-    top : -20px;
-    left : 50px;
-    transform: rotate(50deg);
+    top : -79px;
+    left : 150px;
+    transform: rotate(45deg);
     z-index: -1;
     transition: all .4s ease;
     border : 2px solid black;
@@ -130,14 +131,14 @@ ul {
 
 .hero button:hover {
     box-shadow: none;
-    transform: translate(3px ,3px);
+    transform: translate(4px ,4px);
     color : black;
-    background-color: #accbee;
+    /* background-color: black; */
     border: 2px solid black;
 
 }
 .hero button:hover::before {
-    left : -110px;
+    left : -40px;
 }
 
 
@@ -152,12 +153,15 @@ span {
 
 
 .about-me {
-    margin : 10%;
+    margin : 0 10% ;
 }
 
 .about-heading {
-    margin-bottom : 0px;
+    margin: 0px;
 
+}
+.about-section {
+    height: 25vh;
 }
 
 .sub-heading {

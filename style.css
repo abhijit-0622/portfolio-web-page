@@ -176,3 +176,7 @@ span {
     opacity: .9;
     width : 70%;
 }
+
+#extra {
+    opacity: 0;
+}

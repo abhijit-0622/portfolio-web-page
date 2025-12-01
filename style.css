@@ -133,7 +133,6 @@ ul {
     box-shadow: none;
     transform: translate(4px ,4px);
     color : black;
-    /* background-color: black; */
     border: 2px solid black;
 
 }
@@ -153,7 +152,7 @@ span {
 
 
 .about-me {
-    margin : 0 10% ;
+    margin : 0 10% 10% ;
 }
 
 .about-heading {
@@ -162,6 +161,7 @@ span {
 }
 .about-section {
     height: 25vh;
+
 }
 
 .sub-heading {
@@ -180,3 +180,71 @@ span {
 #extra {
     opacity: 0;
 }
+
+code {
+    font-size: 1rem;
+}
+
+.skills {
+    margin : 0 10%;
+}
+
+.skills-container {
+    margin-top: -60px;
+    background-color: #accbeea4;
+    display : grid;
+}
+
+.grid-box {
+    /* background-color: red; */
+
+}
+
+.skills-container {
+    padding: 30px;
+}
+
+.skills-container h2 {
+    margin: 30px 0 15px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.badge {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    cursor: default;
+    background: #1f2633;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255,255,255,0.15);
+}
+
+.js { background:#f7df1e; color:#000; }
+.html { background:#e44d26; color : #fff}
+.css { background:#264de4; color:#fff }
+.bootstrap { background:#7952b3; color :#fff }
+
+.c { background-color: #283593; color : #fff}
+.cpp{ background-color: #00599C; color : #fff}
+.java{ background-color: #E76F00; color : #fff}
+.python{ background-color: #3776AB; color : #fff}
+
+.git { background:#f1502f; color : #fff }
+.github { background:#24292e; color : #fff }

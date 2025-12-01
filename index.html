@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="home">
         <nav class="navbar">
@@ -27,48 +32,115 @@
                 <ul>
                     <li><a href="#linkedin"><i class="fa-brands fa-square-linkedin"></i></a></li>
                     <li><a href="#github"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="#twitter"><i class="fa-brands fa-x-twitter"></i></a></li>          
+                    <li><a href="#twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero">
             <h1 class="heading"><span class="highlight">I'm</span> Abhijit VP</h1>
             <p class="description">I’m a first-year student learning programming, DSA, and web development.
-I love building projects and improving my coding skills every day.</p>
-                <button>Let's Connect  <i class="fa-solid fa-paper-plane"></i></button>
+                I love building projects and improving my coding skills every day.</p>
+            <button>Let's Connect <i class="fa-solid fa-paper-plane"></i></button>
         </div>
     </header>
     <br>
 
     <main>
-        <section id="about">
-            <div class="about-section"></div>
-        </section>
-        <section class="about-me">
-           <h1 class="heading about-heading">About Me</h1>
-           <p class="sub-heading">WHO I AM AND WHAT I DO</p>
-           <h5>WHO I AM</h5>
-           <p class="long-desc">I’m Appu — a passionate learner and an aspiring software developer. I enjoy exploring technology, understanding how things work behind the scenes, and improving a little every day.</p>
-           <h5>WHAT I DO</h5>
-           <p class="long-desc">I’m currently learning C, Java, Python, DSA, and the basics of web development. I build small projects, practice coding regularly, and aim to grow my skills to become a software developer and later a DevOps engineer.</p>
-        </section>
+        <div class="home">
+            <!-- <section id="about">
+                <div class="about-section"></div>
+            </section> -->
+            <section class="about-me">
+                <h1 class="heading about-heading">About <span>Me</span></h1>
+                <p class="sub-heading">WHO I AM AND WHAT I DO</p>
+                <h5>WHO I AM</h5>
+                <p class="long-desc">I’m <code>Abhijit VP</code> — a passionate learner and an aspiring software
+                    developer. I enjoy exploring technology, understanding how things work behind the scenes, and
+                    improving a little every day.</p>
+                <h5>WHAT I DO</h5>
+                <p class="long-desc">I’m currently learning <code>C, Java, Python, DSA, </code>and the basics of
+                    <code>web development</code>. I build small projects, practice coding regularly, and aim to grow my
+                    skills to become a software developer and later a DevOps engineer.
+                </p>
+            </section>
+        </div>
+        <div class="home">
+            <section class="skills">
+                <h1 class="heading about-heading"><span>My</span> Skills</h1>
+                <p class="sub-heading">LANGUAGES, SOFTWARE.</p>
+                <code>
+                <div class="skills-container">
+                    <div class="grid-box">
+                        <h2>Frontend</h2>
+                        <div class="bedge-group">
+                            <span class="badge js"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="badge html"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="badge css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="badge bootstrap"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="grid-box">
+                        <h2>Language</h2>
+                        <div class="bedge-group">
+                            <span class="badge c"><i class="fa-solid fa-c"></i></span>
+                            <span class="badge cpp">C++</span>
+                            <span class="badge java"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="badge python"><i class="fa-brands fa-python"></i> Python</span>
+                        </div>
+                    </div>
+
+                    <div class="grid-box">
+                        <h2>Frontend</h2>
+                        <div class="bedge-group"> 
+                            <span class="badge git"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="badge github"><i class="fa-brands fa-github"></i> GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                </code>
+            </section>
+        </div>
     </main>
     <div id="extra">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga adipisci laudantium nihil tempore doloremque? Hic nesciunt, incidunt ducimus a fugit, officiis repellat quasi eum fugiat fuga quod, corrupti voluptas!
-        Impedit hic corporis possimus! Voluptates aperiam nobis blanditiis quis! Molestias, ipsam magni non officia aliquid itaque veniam dignissimos dolorum ex perferendis qui corporis laborum, neque quis commodi sunt dolore perspiciatis.
-        Excepturi in reiciendis repellat blanditiis quaerat neque, alias, odit voluptatibus mollitia sunt praesentium commodi. Molestiae, ullam, temporibus adipisci odio, nobis quia placeat minima neque consequatur amet reiciendis voluptatibus obcaecati ab.
-        Numquam placeat eum quibusdam culpa obcaecati accusamus adipisci fugit unde non et quisquam aspernatur reiciendis, nulla explicabo dolores neque cumque dolorum quos aperiam iusto dolore, earum voluptatum? Voluptatibus, mollitia totam.
-        Labore perferendis quam debitis, aperiam corrupti dolore ab et fuga, necessitatibus earum, pariatur rem quasi accusamus minima veniam eos quas sed voluptatem asperiores cum omnis suscipit? Esse, saepe velit. Veniam.
-        Debitis a, quaerat aliquam cumque voluptate aspernatur. A recusandae eum in doloribus mollitia sapiente sed quam dolores nulla maiores enim repellendus, nihil aperiam eos magnam culpa, dolorem repellat vel ratione.
-        Eius itaque iusto ipsam architecto, rerum suscipit consequuntur praesentium quasi dolores iure quibusdam quas aliquid inventore alias pariatur? Quia numquam impedit similique nobis voluptatem aliquam ipsum commodi aut ipsa consequatur!
-        Tempore rem ex explicabo! Repellendus amet impedit delectus, quaerat nisi fuga, sit minus aspernatur maiores neque aut ad veniam. Odit ipsam mollitia nulla et dolores, eos tempore iure quas repudiandae?
-        Officiis minima facilis ipsa odit. Eaque ad hic tenetur odit voluptate autem tempore possimus similique eum! Cupiditate mollitia quia expedita assumenda ullam saepe, laudantium debitis, a alias magnam qui rerum.
-        Id, obcaecati doloremque, adipisci ad rerum sed eius at nulla facere officiis eligendi iste consequuntur, quia quis tenetur. Asperiores repudiandae aliquam quaerat fugit totam adipisci eligendi corporis recusandae error cumque!
-        Iusto dolor iste molestiae, perferendis rem mollitia laborum sapiente quia error natus. Voluptas animi officiis, tempore amet non est maxime eaque magni sint facere ex sapiente qui excepturi aperiam doloremque.
-        Error ad ipsa, aliquam quis ab delectus, necessitatibus voluptas consectetur sit vero facere consequatur neque veritatis ducimus obcaecati temporibus labore eius inventore vitae. Delectus et autem facilis rem, aut corrupti.
-        Impedit dolorem distinctio quibusdam incidunt molestias officiis aliquam blanditiis neque. Veritatis magnam inventore minima? Ratione, quas at. Asperiores officiis repellendus eaque reprehenderit quas. Tempore unde, eveniet doloremque voluptate adipisci consequuntur.
-        Debitis corrupti iste excepturi. Error voluptas, temporibus unde, laboriosam omnis rem corporis quasi adipisci, commodi recusandae eaque. Debitis consectetur cumque ipsa, laboriosam ducimus quis! Repellat nam totam quae soluta ab.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga adipisci laudantium nihil tempore
+        doloremque? Hic nesciunt, incidunt ducimus a fugit, officiis repellat quasi eum fugiat fuga quod, corrupti
+        voluptas!
+        Impedit hic corporis possimus! Voluptates aperiam nobis blanditiis quis! Molestias, ipsam magni non officia
+        aliquid itaque veniam dignissimos dolorum ex perferendis qui corporis laborum, neque quis commodi sunt dolore
+        perspiciatis.
+        Excepturi in reiciendis repellat blanditiis quaerat neque, alias, odit voluptatibus mollitia sunt praesentium
+        commodi. Molestiae, ullam, temporibus adipisci odio, nobis quia placeat minima neque consequatur amet reiciendis
+        voluptatibus obcaecati ab.
+        Numquam placeat eum quibusdam culpa obcaecati accusamus adipisci fugit unde non et quisquam aspernatur
+        reiciendis, nulla explicabo dolores neque cumque dolorum quos aperiam iusto dolore, earum voluptatum?
+        Voluptatibus, mollitia totam.
+        Labore perferendis quam debitis, aperiam corrupti dolore ab et fuga, necessitatibus earum, pariatur rem quasi
+        accusamus minima veniam eos quas sed voluptatem asperiores cum omnis suscipit? Esse, saepe velit. Veniam.
+        Debitis a, quaerat aliquam cumque voluptate aspernatur. A recusandae eum in doloribus mollitia sapiente sed quam
+        dolores nulla maiores enim repellendus, nihil aperiam eos magnam culpa, dolorem repellat vel ratione.
+        Eius itaque iusto ipsam architecto, rerum suscipit consequuntur praesentium quasi dolores iure quibusdam quas
+        aliquid inventore alias pariatur? Quia numquam impedit similique nobis voluptatem aliquam ipsum commodi aut ipsa
+        consequatur!
+        Tempore rem ex explicabo! Repellendus amet impedit delectus, quaerat nisi fuga, sit minus aspernatur maiores
+        neque aut ad veniam. Odit ipsam mollitia nulla et dolores, eos tempore iure quas repudiandae?
+        Officiis minima facilis ipsa odit. Eaque ad hic tenetur odit voluptate autem tempore possimus similique eum!
+        Cupiditate mollitia quia expedita assumenda ullam saepe, laudantium debitis, a alias magnam qui rerum.
+        Id, obcaecati doloremque, adipisci ad rerum sed eius at nulla facere officiis eligendi iste consequuntur, quia
+        quis tenetur. Asperiores repudiandae aliquam quaerat fugit totam adipisci eligendi corporis recusandae error
+        cumque!
+        Iusto dolor iste molestiae, perferendis rem mollitia laborum sapiente quia error natus. Voluptas animi officiis,
+        tempore amet non est maxime eaque magni sint facere ex sapiente qui excepturi aperiam doloremque.
+        Error ad ipsa, aliquam quis ab delectus, necessitatibus voluptas consectetur sit vero facere consequatur neque
+        veritatis ducimus obcaecati temporibus labore eius inventore vitae. Delectus et autem facilis rem, aut corrupti.
+        Impedit dolorem distinctio quibusdam incidunt molestias officiis aliquam blanditiis neque. Veritatis magnam
+        inventore minima? Ratione, quas at. Asperiores officiis repellendus eaque reprehenderit quas. Tempore unde,
+        eveniet doloremque voluptate adipisci consequuntur.
+        Debitis corrupti iste excepturi. Error voluptas, temporibus unde, laboriosam omnis rem corporis quasi adipisci,
+        commodi recusandae eaque. Debitis consectetur cumque ipsa, laboriosam ducimus quis! Repellat nam totam quae
+        soluta ab.
     </div>
-        
+
 </body>
+
 </html>

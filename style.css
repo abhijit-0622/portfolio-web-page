@@ -148,6 +148,7 @@ span {
 
 .home {
     border-bottom : 3px solid black;
+
 }
 
 
@@ -159,7 +160,7 @@ span {
     margin: 0px;
 
 }
-.about-section {
+.scroll-section {
     height: 25vh;
 
 }
@@ -186,7 +187,8 @@ code {
 }
 
 .skills {
-    margin : 0 10%;
+    margin : 0 20% 4rem 10%;
+
 }
 
 .skills-container {
@@ -195,17 +197,17 @@ code {
     display : grid;
 }
 
-.grid-box {
-    /* background-color: red; */
 
-}
 
 .skills-container {
-    padding: 30px;
+    margin-top : 1rem;
+    padding: 0 0 20px 20px;
+    border : 3px solid #375981;
+    border-radius: 10px;
 }
 
 .skills-container h2 {
-    margin: 30px 0 15px;
+    margin: 20px 0 15px;
     font-size: 30px;
     letter-spacing: 1px;
 }

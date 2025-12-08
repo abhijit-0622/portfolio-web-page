@@ -7,8 +7,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-
-}
+    
+} 
 
 html {
     scroll-behavior: smooth;
@@ -21,15 +21,20 @@ li, a {
 a {
     color : black;
     transition: all .2s ease;
-
+    position : relative;
 }
 
 a:hover {
-    transform: scale(1.2);
-
+    transform: scale(1.1);
 
 }
-li {
+.center {
+    display : flex;
+    justify-content: space-between;
+}
+
+
+.nav-option li {
     margin-right: 10px;
     margin-left : 20px;
     padding : 5px;
@@ -142,7 +147,7 @@ ul {
 
 
 span {
-    color : #90a7c2;
+    color : #486c95;
     font-size: larger;
 }
 
@@ -161,7 +166,7 @@ span {
 
 }
 .scroll-section {
-    height: 25vh;
+    height: 20vh;
 
 }
 
@@ -250,3 +255,140 @@ code {
 
 .git { background:#f1502f; color : #fff }
 .github { background:#24292e; color : #fff }
+
+
+.contact {
+    /* background-color : red; */
+    margin : 10%;
+}
+
+form {
+    display : flex;
+    flex-direction : column;
+    align-items: end;
+    gap : 2rem;
+}
+.form, .socials {
+    width : 410px;
+}
+
+.form h3 {
+    font-size: 1.7rem;
+    margin : 1.5rem 0;
+}
+
+
+.container {
+    display : flex;
+    justify-content: space-between;
+    
+}
+
+.socials ul {
+    display : flex;
+    justify-content: space-evenly;
+}
+
+.socials ul .underline {
+    position : relative;
+}
+
+.socials ul .underline::after {
+    position: absolute;
+    height: 2px;
+    background: black;
+    
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.socials ul .underline:hover::after {
+    width: 79%;       
+
+}
+
+.socials {
+    align-self: end;
+}
+
+.socials h1 {
+    margin-top : 2px;
+    margin-bottom : 2px;
+}
+
+.personal-detail {
+    margin-bottom : 1.8rem;
+}
+
+
+.field {
+  position: relative;
+  width: 400px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color : #ffffff00;
+}
+
+.field label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 15px;
+  color: #2f5782;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Move placeholder when typing or on focus */
+input[type="text"]:focus ~ label,
+.field input:not(:placeholder-shown)
+.field :not(:focus) ~ label {
+  transform: translateY(-130%);
+  font-size: 14px;
+  color: #375e8b;
+}
+
+#textarea {
+    height: 60px;          
+    padding: 10px;          
+    line-height: normal
+}
+
+
+.submit-btn button {
+    padding : .2rem .2rem;
+    font-size: 1.2rem;
+    border : none;
+    position : relative;
+    background-color: #ffffff0d;
+    border-radius : 2px;
+}
+
+.underline {
+    color : #486c95;
+}
+
+.underline::after{
+    content : "";
+    position : absolute;
+    background-color : #000;
+    height : 2px;
+    width : 0;
+    bottom : 0;
+    left : 0;
+    border-radius: 10px;
+    transition : width .5s ease;
+}
+
+.underline:hover::after {
+    width : 100%;
+}
+

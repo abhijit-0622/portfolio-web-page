@@ -42,17 +42,28 @@ a:hover {
 
 ul {
     padding : 0;
-    margin : 0;
-    align-content: center;
-    
+    margin : 0 ;
+    display : flex;
+    align-items: center;
+    justify-items: center;
 
+
+}
+
+.navdiv ul {
+    gap : .5rem;
 }
 
 .logo-av {
     height : 50px;
-    margin-left: 1rem;
-
+    margin-left: .5rem;
 }
+
+.logo {
+    display : flex;
+    align-items : center;
+}
+
 
 .nav-option {
     font-size: 1rem;
@@ -60,8 +71,16 @@ ul {
 
 }
 
-.navdiv  i {
+.navdiv  i, .navdiv img {
     font-size: 25px;
+    /* height : 25px; */
+    
+}
+
+
+.navdiv a {
+    display : flex;
+    align-content : center;
 }
 
 
@@ -120,40 +139,56 @@ ul {
 
 }
 
+
+
+
+.noise::before {
+    content: "";
+    position: fixed;
+    inset : 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/black-paper.png");
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: 0.5;
+}
+
 .hero button::before {
     content : "";
-    height : 160px;
-    width : 200px;
-    background-color : #accbee;
+    height : 20px;
+    width : 150px;
+    background-color : #ffffffa9;
     position : absolute;
-    top : -79px;
-    left : 150px;
+    top : 0px;
+    left : 110px;
     transform: rotate(45deg);
-    z-index: -1;
-    transition: all .4s ease;
-    border : 2px solid black;
+    z-index: 5;
+    transition: all .7s ease;
+}
+
+.hero a {
+    transform : none;
 }
 
 .hero button:hover {
     box-shadow: none;
     transform: translate(4px ,4px);
-    color : black;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
 }
 .hero button:hover::before {
-    left : -40px;
+    left : -140px;
 }
 
 
 span {
     color : #486c95;
-    font-size: larger;
+    font-size: 3.5rem;
 }
 
 .home {
     border-bottom : 3px solid black;
-
 }
 
 
@@ -236,6 +271,7 @@ code {
     background: #1f2633;
     border: 1px solid transparent;
     transition: 0.3s;
+    margin : 6px 0;
 }
 
 .badge:hover {
@@ -258,8 +294,8 @@ code {
 
 
 .contact {
-    /* background-color : red; */
-    margin : 10%;
+    margin : 0 10%;
+    padding : 10% 0;
 }
 
 form {
@@ -280,8 +316,9 @@ form {
 
 .container {
     display : flex;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    gap : 15%;
+    justify-content: center;
 }
 
 .socials ul {
@@ -310,6 +347,7 @@ form {
 
 .socials {
     align-self: end;
+    padding-bottom : 3rem;
 }
 
 .socials h1 {
